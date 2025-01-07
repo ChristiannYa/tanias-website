@@ -28,12 +28,12 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'contactform.html'));
 });
 
-let serviceLabels = {};
-
-(async () => {
-  const contact = await import(path.join('file://', __dirname, '../client/src/constants/contact.js'));
-  serviceLabels = contact.default.serviceLabels;
-})();
+const serviceLabels = {
+  photography: 'Photography',
+  videography: 'Videography',
+  contentCreation: 'Content Creation',
+  other: 'Other',
+};
 
 app.post('/send-email', async (req, res) => {
   const { 
