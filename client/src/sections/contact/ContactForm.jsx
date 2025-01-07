@@ -20,16 +20,16 @@ const ContactForm = () => {
 
   const getDisplayValue = (key, value) => {
     if (key === 'service') {
-      return value.map(s => contact.serviceLabels[s]).join(' - ');
-    };
+      return value.map((s) => contact.serviceLabels[s]).join(' - ');
+    }
 
-    const input = contact.formInputs.find(input => input.id === key);
+    const input = contact.formInputs.find((input) => input.id === key);
     if (input?.isRequired === false) {
       return value.trim() || 'Not Provided';
-    };
+    }
 
     return value;
-  }
+  };
 
   const handleChange = (e) => {
     // Update the form data as the user types,
@@ -70,6 +70,12 @@ const ContactForm = () => {
     e.preventDefault();
     setError(null);
 
+    console.log('Backend URL:', import.meta.env.VITE_BACKEND_URL);
+    console.log(
+      'Full request URL:',
+      `${import.meta.env.VITE_BACKEND_URL}/send-email`
+    );
+
     const validationError = validateForm();
     if (validationError) {
       setError(validationError);
@@ -92,7 +98,7 @@ const ContactForm = () => {
           },
           body: JSON.stringify(formData),
         }
-      );      
+      );
 
       const [response] = await Promise.all([fetchPromise, minLoadingTime]);
       const result = await response.json();
