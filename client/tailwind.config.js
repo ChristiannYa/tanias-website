@@ -1,8 +1,5 @@
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
@@ -36,12 +33,12 @@ export default {
         'bs-2': 'var(--bs-2)',
       },
       borderRadius: {
-        'rd-1': 'var(--rd-1)'
+        'rd-1': 'var(--rd-1)',
       },
       backgroundImage: {
-        'bgi-1': 'var(--bgi-1)'
-      }
+        'bgi-1': 'var(--bgi-1)',
+      },
     },
   },
   plugins: [],
-}
+};

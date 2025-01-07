@@ -1,9 +1,8 @@
 :root {
   /* Font Families */
-  --ff-1: 'Archivo Narrow', sans-serif;
+  --ff-1: 'Encode Sans Condensed', serif;
   --ff-2: 'Poppins', sans-serif;
   --ff-3: 'Bebas Neue', serif;
-  --ff-4: "PT Sans Narrow", serif;
 
   /* Font Size */
   --fs-0: 0.9rem;
