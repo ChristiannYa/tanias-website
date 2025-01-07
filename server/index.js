@@ -6,7 +6,13 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 
-app.use(cors());
+app.use(
+  cors({
+    origin: 'https://taniagutti.netlify.app',
+    methods: ['POST', 'GET'],
+    credentials: true,
+  })
+);
 
 const PORT = process.env.PORT || 3000;
 
