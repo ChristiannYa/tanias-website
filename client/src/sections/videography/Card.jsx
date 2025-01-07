@@ -46,11 +46,10 @@ const Card = () => {
       </div>
       <div>
         <Link
-          to='/contact'        
-          target="_blank"
+          to={`${import.meta.env.BASE_URL}contact`}
           rel="noopener noreferrer"
         >
-          <CtaButton/>
+          <CtaButton />
         </Link>
       </div>
     </section>
