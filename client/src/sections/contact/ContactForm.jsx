@@ -83,13 +83,16 @@ const ContactForm = () => {
         setTimeout(resolve, 2000)
       );
 
-      const fetchPromise = fetch('http://localhost:3000/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const fetchPromise = fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/send-email`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        }
+      );      
 
       const [response] = await Promise.all([fetchPromise, minLoadingTime]);
       const result = await response.json();
