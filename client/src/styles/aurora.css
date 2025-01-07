@@ -1,0 +1,5 @@
+#tsparticles {
+  z-index: 4;
+  pointer-events: none;
+  @apply wh-full blur-2;
+}

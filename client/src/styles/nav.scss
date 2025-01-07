@@ -1,0 +1,111 @@
+.page-header {
+  z-index: 3;
+  @apply shadow-bs-2 h-24 rowflex-center;
+}
+
+.page-header-fixed {
+  z-index: 3;
+  @apply bg-none h-fit fixed;
+}
+
+.tg-logo {
+  z-index: 1;
+
+  @apply w-4/5 top-0 right-0 object-contain;
+}
+
+#links-container {
+  animation: shadowColorChange 10s infinite;
+  border-radius: 50%;
+  transition: all 0.55s;
+
+  height: 80px;
+  min-height: 80px;
+  margin: 0.5rem 0 0 0.5rem;
+  aspect-ratio: 1/1;
+  float: left;
+  z-index: 3;
+
+  @apply blur-2 cursor-pointer rowflex-center absolute left-0 top-0;
+
+  @media (max-width: 768px) { 
+    height: 68px;
+    min-height: 68px;
+    margin: 0.9rem 0 0 0.5rem;
+  }
+}
+
+@keyframes shadowColorChange {
+  0% {
+    box-shadow: 0px 0px 8px var(--acc-2);
+  }
+
+  25% {
+    box-shadow: 0px 0px 8px var(--acc-2);
+  }
+
+  50% {
+    box-shadow: 0px 0px 8px var(--acc-2);
+  }
+
+  75% {
+    box-shadow: 0px 0px 8px var(--acc-2);
+  }
+
+  100% {
+    box-shadow: 0px 0px 8px var(--acc-2);
+  }
+}
+
+#links-wrapper {
+  opacity: 0;
+  gap: .6rem 0;
+
+  @apply w-0 h-0 text-center invisible;
+}
+
+/* ---------- */
+/* Opened nav */
+/* ---------- */
+
+#links-container.active {
+  z-index: 2;
+  @apply blur-3 rounded-none wh-screen m-0 fixed top-0 left-0;
+
+  @media (max-width: 768px) { 
+    @apply flex flex-col justify-start;
+  }
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+#links-container.active .tg-logo {
+  /* Page Logo */
+  @apply w-[100px] absolute top-4 left-4;
+}
+
+#links-container.active #links-wrapper {
+  /* a's wrapper */
+  opacity: 1;
+  @apply colflex-center w-fit h-fit visible gap-y-1;
+
+  @media (max-width: 768px) { 
+    @apply mt-20;
+  }
+}
+
+#links-container.active #links-wrapper a {
+  /* Each Link */
+  @apply py-1;
+}
+
+#links-container.active #links-wrapper a:hover {
+  /* When hovering over a link */
+  @apply gradient-text;
+}
+
+#links-container.active #links-wrapper a.active {
+  @apply gradient-text;
+}

@@ -1,0 +1,120 @@
+// Font imports
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+// Styles
+@import './styles/variables.css';
+@import './styles/typography.scss';
+@import './styles/nav.scss';
+@import './styles/landing-slideshow.css';
+@import './styles/img-queries.css';
+@import './styles/carousel.css';
+@import './styles/packages.scss';
+@import './styles/faqs.scss';
+@import './styles/card.css';
+@import './styles/aurora.css';
+@import './styles/contact.scss';
+@import './styles/loading.css';
+@import './styles/ctaButton.css';
+@import './styles/bookButton.css';
+
+// Directives
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wh-full {
+    @apply w-full h-full;
+  }
+  
+  .wh-fit {
+    @apply w-fit h-fit;
+  }
+  
+  .wh-screen {
+    @apply w-screen h-screen;
+  }
+  
+  .rowflex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .colflex-center {
+    @apply flex justify-center items-center flex-col;
+  }
+
+  .copy-message {
+    font-family: var(--ff-3);
+  
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  
+    @apply gradient-text text-2xl max-sm:text-lg;
+  }
+  
+  .copy-message.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .email {
+    color: var(--fc-3);
+    font-family: var(--ff-3);
+    font-size: 1.1rem;
+    letter-spacing: .3px;
+  }
+
+  .blur-0 {
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+
+  .blur-2 {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .blur-3 {
+    backdrop-filter: blur(8px) brightness(0.5);
+    -webkit-backdrop-filter: blur(8px) brightness(0.5);
+  }  
+
+  .blur-4 {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .screen1200 { 
+    width: min(92%, 1200px);
+  }
+
+  .screen700 {
+    // carousel
+    width: min(100%, 700px);
+  }
+
+  .screen400 {
+    width: min(92%, 400px);
+  }
+
+  .screen800 {
+    // carousel
+    width: min(92%, 800px);
+  }
+
+  .grid-300gr {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

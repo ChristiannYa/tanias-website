@@ -1,0 +1,30 @@
+img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  transition: opacity 0.5s ease-in-out;
+  filter: blur(10px);
+  opacity: 0;
+
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  filter: blur(0px);
+}

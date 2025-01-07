@@ -1,0 +1,19 @@
+@media screen and (min-width: 775px) {
+  .blue-dress-xv.slide {
+    object-position: 50% 0%;
+  }
+
+  .mario-lopez.slide {
+    object-position: 50% 45%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .mario-lopez.slide {
+    object-position: 100% 0%;
+  }
+
+  .blue-dress-xv.slide {
+    object-position: 100% 0%;
+  }
+}

@@ -1,0 +1,90 @@
+.conform {
+  gap: 16px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__area1 {
+    // border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0px;
+    flex: 4;
+
+    input {
+      // border: solid 1px blue;
+    }
+  }
+
+  &__area2 {
+    flex: 6;
+    textarea {
+      // border: solid 1px blue;
+    }
+  }
+
+  &__input {
+    color: var(--fc-3);
+    height: 52px;
+
+    background: transparent;
+    resize: none;
+
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    padding: 0px 12px;
+
+    &::placeholder {
+      font-family: var(--ff-3);
+      font-size: 1.2rem;
+
+      @apply gradient-text;
+    }
+  }
+
+  &__services {
+    padding: 6px 12px;
+    @apply flex flex-col gap-y-2;
+    
+    &-title {
+      font-family: var(--ff-3);
+      font-size: 1.2rem;
+      @apply gradient-text;
+    }
+
+    &-options {
+      @apply flex flex-col gap-y-1;
+    }
+
+    &-option {
+      font-family: var(--ff-3);
+      color: var(--fc-3);
+      @apply flex items-center gap-x-2;
+    }
+  }
+
+  &__textarea {
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+
+    padding: 24px;
+  }
+
+  &__submit {
+    color: var(--fc-3);
+    width: fit-content;
+    
+    padding: 0px 12px;
+
+    @apply page-subheading;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  /* Font Families */
+  --ff-1: 'Archivo Narrow', sans-serif;
+  --ff-2: 'Poppins', sans-serif;
+  --ff-3: 'Bebas Neue', serif;
+  --ff-4: "PT Sans Narrow", serif;
+
+  /* Font Size */
+  --fs-0: 0.9rem;
+  --fs-1: 1rem;
+  --fs-2: 1.5rem;
+  --fs-3: 2rem;
+  --fs-4: 2.5rem;
+  --fs-5: 3rem;
+  --fs-6: 5rem;
+
+  /* Accents */
+  --acc-1: #36bcbe;
+  --acc-2: #9186e6;
+  --acc-3: #29bbe5;
+
+  /* Font color */
+  --fc-2: rgb(30 41 59); /* slate-800 */
+  --fc-3: #f5fefd;
+  --fc-4: #1c1c1c;
+  --fc-5: #636775;
+
+  /* Background color */
+  --bgc-1: #3e3d53;
+
+  /* Box shadow */
+  --bs-1: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --bs-2: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+  /* Radius */
+  --rd-1: 5px;
+
+  /* Background Image */
+  --bgi-1: url(../assets/images/videography/vds-1.jpeg);
+}

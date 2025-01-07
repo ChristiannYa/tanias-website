@@ -1,0 +1,47 @@
+export const navLinks = [
+  { id: 1, path: '/', label: 'home', title: '', showTitle: false },
+  { id: 2, path: '/about', label: 'about', title: 'about', showTitle: true },
+  {
+    id: 3,
+    path: '/portraits',
+    label: 'portraits',
+    title: 'portraits',
+    showTitle: true,
+  },
+  {
+    id: 4,
+    path: 'https://www.taniaguttiphotography.com/clients',
+    label: 'client galleries',
+    title: '',
+    showTitle: false,
+    external: true,
+  },
+  {
+    id: 5,
+    path: '/packages',
+    label: 'photography packages',
+    title: 'pricing',
+    showTitle: true,
+  },
+  {
+    id: 6,
+    path: '/realEstate',
+    label: 'real estate photography',
+    title: 'real estate',
+    showTitle: true,
+  },
+  {
+    id: 7,
+    path: '/videography',
+    label: 'videography & content creation',
+    title: 'videography',
+    showTitle: true,
+  },
+  {
+    id: 8,
+    path: '/contact',
+    label: 'contact',
+    title: 'contact',
+    showTitle: true,
+  },
+];
