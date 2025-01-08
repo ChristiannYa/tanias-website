@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import CtaButton from "../../components/CtaButton";
-
 const Card = () => {
   const handleInteraction = (e) => {
     const card = e.currentTarget.querySelector('.tilting-card-content');
@@ -28,7 +25,7 @@ const Card = () => {
   };
 
   return (
-    <section className="screen800 mx-auto colflex-center mt-12 py-2 gap-y-4">
+    <section className="screen800 mx-auto colflex-center py-2 gap-y-4">
       <div
         className="tilting-card-wrapper"
         onMouseMove={handleInteraction}
@@ -43,14 +40,6 @@ const Card = () => {
             </h1>
           </div>
         </div>
-      </div>
-      <div>
-        <Link
-          to={`${import.meta.env.BASE_URL}contact`}
-          rel="noopener noreferrer"
-        >
-          <CtaButton />
-        </Link>
       </div>
     </section>
   );
