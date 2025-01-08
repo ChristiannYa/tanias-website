@@ -8,7 +8,7 @@ const path = require('path');
 
 app.use(
   cors({
-    origin: 'https://taniagutti.netlify.app',
+    origin: ['https://taniagutti.netlify.app', 'https://taniagutti.com'],
     methods: ['POST', 'GET'],
     credentials: true,
   })
