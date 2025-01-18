@@ -10,7 +10,7 @@ export const navLinks = [
   },
   {
     id: 4,
-    path: 'https://www.taniaguttiphotography.com/clients',
+    path: 'https://taniaguttiphotography.mypixieset.com/clients/',
     label: 'client galleries',
     title: '',
     showTitle: false,
