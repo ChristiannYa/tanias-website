@@ -19,7 +19,7 @@ const PointingHandEmoji = ({ targetId }) => {
 
   return (
     <div
-      className="text-center absolute left-20 scale-75"
+      className="text-center absolute left-20 scale-75 max-md:-ml-5"
       data-target={targetId}
     >
       <button className="button">
