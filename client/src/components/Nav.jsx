@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import icons from '../assets/icons';
 import { navLinks } from '../constants';
 import { useState, useEffect } from 'react';
+import PointingHandEmoji from './PointingHandEmoji';
 
 const Nav = ({ isFixed }) => {
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -20,7 +21,9 @@ const Nav = ({ isFixed }) => {
 
   return (
     <header
-      className={`bg-slate-800 z-50 ${isFixed ? 'page-header page-header-fixed' : 'page-header'}`}
+      className={`bg-slate-800 z-50 ${
+        isFixed ? 'page-header page-header-fixed' : 'page-header'
+      }`}
     >
       <div
         id="links-container"
@@ -54,6 +57,7 @@ const Nav = ({ isFixed }) => {
               </p>
             ))}
         </nav>
+        <PointingHandEmoji />
       </div>
       {/* Page title */}
       {currentPage?.showTitle && (
