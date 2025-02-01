@@ -4,13 +4,14 @@ const Intro = () => {
       <h1 className="capitalize page-subheading gradient-text">
         standard and deluxe packages available
       </h1>
-      <div className='page-info'>
+      <div className="page-info">
         <p>
-          At TG photography, we specialize in providing professional real estate
-          photography services for <span className='gradient-text'>residential</span> and 
-          {' '}<span className="gradient-text">commercial</span> properties, so whether 
-          you&apos;re selling a cozy home, listing an Airbnb or promoting a business, 
-          we&apos;ve got you covered.
+          At TG photography, we specialize in providing professional{' '}
+          <span className="gradient-text">interior and exterior</span>{' '}
+          photography services for{' '}
+          <span className="gradient-text">residential and commercial</span>{' '}
+          properties, so whether you&apos;re selling a cozy home, listing an
+          Airbnb or promoting a business, we&apos;ve got you covered.
         </p>
         <p>Contact us today to schedule a free consultation.</p>
       </div>

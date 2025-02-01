@@ -185,7 +185,7 @@ const ContactForm = () => {
 
             {/* service needed */}
             <div className="conform__services">
-              <p className="conform__services-title">Service needed:</p>
+              <p className="conform__services-title">I am interested in:</p>
               <div className="conform__services-options">
                 {contact.serviceOptions.map((option) => (
                   <label
@@ -210,7 +210,7 @@ const ContactForm = () => {
             <textarea
               className="conform__input conform__textarea"
               id="message"
-              placeholder="your message"
+              placeholder="message"
               value={formData.message}
               onChange={handleChange}
             />

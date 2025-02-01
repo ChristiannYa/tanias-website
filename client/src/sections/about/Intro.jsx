@@ -5,13 +5,19 @@ const Intro = () => {
   return (
     <section className="colflex-center screen800">
       <div className="w-full">
-        <h2 className="page-subheading text-fc-3">Hi, I am Tania Gutti</h2>
         <p className="page-info text-fc-3">
-          A professional photographer based in Houston, Texas. I specialize in{' '}
-          <span className="gradient-text">corporate event photography</span>,{' '}
-          <span className="gradient-text">real estate photography</span>,{' '}
-          <span className="gradient-text">portraits</span>, and{' '}
-          <span className="gradient-text">professional headshots</span>.
+          Hi, I am Tania! A professional photographer, specializing in{' '}
+          <span className="gradient-text capitalize">
+            corporate event photography
+          </span>{' '}
+          <span className="gradient-text capitalize">
+            real estate photography
+          </span>
+          ,{' '}
+          <span className="gradient-text capitalize">
+            professional headshots
+          </span>
+          , and <span className="gradient-text capitalize">XV</span>.
         </p>
         <p className="page-info text-fc-3">
           I have a <span className="underlined-1">passion</span> for capturing
@@ -23,7 +29,7 @@ const Intro = () => {
           <span className="underlined-1">photos</span>.
         </p>
         <p className="page-info text-fc-3">
-          Take a look around, explore my galleries, and let&rsquo;s create
+          Take a look around and explore my galleries. I am excited to create
           something amazing together!
         </p>
       </div>

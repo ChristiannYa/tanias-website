@@ -24,7 +24,7 @@ export const packages = [
   {
     id: 'package2',
     title: 'XV & sweet 16th',
-    small_img: package2.small, 
+    small_img: package2.small,
     sizes: {
       768: { default: package2.sizes[768].default },
       1280: { default: package2.sizes[1280].default },
@@ -35,8 +35,8 @@ export const packages = [
   },
   {
     id: 'package3',
-    title: 'outdoor session',
-    small_img: package3.small, 
+    title: 'couples photography',
+    small_img: package3.small,
     sizes: {
       768: { default: package3.sizes[768].default },
       1280: { default: package3.sizes[1280].default },
@@ -48,7 +48,7 @@ export const packages = [
   {
     id: 'package4',
     title: 'corporate event',
-    small_img: package4.small, 
+    small_img: package4.small,
     sizes: {
       768: { default: package4.sizes[768].default },
       1280: { default: package4.sizes[1280].default },
@@ -60,7 +60,7 @@ export const packages = [
   {
     id: 'package5',
     title: 'real estate',
-    small_img: package5.small, 
+    small_img: package5.small,
     sizes: {
       768: { default: package5.sizes[768].default },
       1280: { default: package5.sizes[1280].default },
@@ -72,7 +72,7 @@ export const packages = [
   {
     id: 'package6',
     title: 'portrait studio session',
-    small_img: package6.small, 
+    small_img: package6.small,
     sizes: {
       768: { default: package6.sizes[768].default },
       1280: { default: package6.sizes[1280].default },

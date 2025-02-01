@@ -28,13 +28,6 @@ export const faqs = [
   },
   {
     id: 4,
-    q: 'AAre you available to travel nationwide to capture of our special day?',
-    a: [
-      'Absolutely! My team and I are commited to travelling around the states to ensure every moment of your special day is beautifully captured.',
-    ],
-  },
-  {
-    id: 5,
     q: 'What is the estimated timeframe for editing the images after the photo shoot?',
     a: [
       "After the photo shoot, we'll carefully select your favorite shots, and I'll start editing them. This process typically takes about a week or two.",

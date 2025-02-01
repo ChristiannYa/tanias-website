@@ -1,5 +1,5 @@
 import icons from "../assets/icons";
-import Translate from './Translate';
+// import Translate from '../components/Translate';
 
 const Footer = () => {
   return (
@@ -31,10 +31,10 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="footer-text">christianwebdev</p>
+            <p className="footer-text capitalize">chriswebdev</p>
           </a>
         </div>
-        <Translate />
+        {/* <Translate /> */}
       </div>
     </footer>
   );

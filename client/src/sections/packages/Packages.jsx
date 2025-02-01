@@ -26,12 +26,14 @@ const Packages = () => {
         {packages.map((pck) => (
           <div key={pck.id} id={`${pck.id}`} className="pck__pck">
             <div>
-              <h2 className='package-title capitalize text-center'>{pck.title}</h2>
+              <h2 className="package-title capitalize text-center">
+                {pck.title}
+              </h2>
             </div>
             <div className="relative rounded-sm overflow-hidden shadow-bs-1">
               <div
                 className="pck__blur"
-                style={{backgroundImage: `url(${pck.small})`}}
+                style={{ backgroundImage: `url(${pck.small})` }}
               >
                 <img
                   src={pck.default}
@@ -54,7 +56,7 @@ const Packages = () => {
                   </Fragment>
                 ))}
                 <span>|</span>
-                <p>${(pck.price).toLocaleString()}</p>
+                <p>${pck.price.toLocaleString()} usd</p>
               </div>
             </div>
           </div>
