@@ -8,7 +8,7 @@ const Intro = () => {
         <p className="page-info text-fc-3">
           Hi, I am Tania! A professional photographer, specializing in{' '}
           <span className="gradient-text capitalize">
-            corporate event photography
+            corporate event photography,
           </span>{' '}
           <span className="gradient-text capitalize">
             real estate photography
