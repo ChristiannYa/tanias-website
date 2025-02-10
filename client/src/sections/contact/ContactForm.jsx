@@ -1,7 +1,12 @@
 import { useState } from 'react';
 
-import { config } from '../../../config/config';
+import sendContactForm from '../../utils/requests/contact-form/send-contact-form';
 import contact from '../../constants/contact';
+import { validateContactForm } from '../../utils/contact-form/formValidation';
+import {
+  getDisplayValue,
+  INITIAL_FORM_STATE,
+} from '../../utils/contact-form/formHelpers';
 import Loading from '../../components/Loading';
 
 const ContactForm = () => {
@@ -9,28 +14,7 @@ const ContactForm = () => {
   const [submittedData, setSubmittedData] = useState(false);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: [],
-    subject: '',
-    referral: '',
-    message: '',
-  });
-
-  const getDisplayValue = (key, value) => {
-    if (key === 'service') {
-      return value.map((s) => contact.serviceLabels[s]).join(' - ');
-    }
-
-    const input = contact.formInputs.find((input) => input.id === key);
-    if (input?.isRequired === false) {
-      return value.trim() || 'Not Provided';
-    }
-
-    return value;
-  };
+  const [formData, setFormData] = useState(INITIAL_FORM_STATE);
 
   const handleChange = (e) => {
     setFormData({
@@ -49,30 +33,12 @@ const ContactForm = () => {
     });
   };
 
-  const validateForm = () => {
-    if (!formData.name.trim()) {
-      return 'Please provide a name';
-    }
-    if (!formData.email.trim()) {
-      return 'Please provide an email';
-    }
-    if (formData.service.length === 0) {
-      return 'Please select at least one servie';
-    }
-    if (!formData.message.trim()) {
-      return 'Please provide a message';
-    }
-    return null;
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
 
-    console.log('Backend URL:', config.backendUrl);
-    console.log('Full request URL:', `${config.backendUrl}/send-email`);
+    const validationError = validateContactForm(formData);
 
-    const validationError = validateForm();
     if (validationError) {
       setError(validationError);
       return;
@@ -84,37 +50,15 @@ const ContactForm = () => {
       const minLoadingTime = new Promise((resolve) =>
         setTimeout(resolve, 2000)
       );
+      const [result] = await Promise.all([
+        sendContactForm(formData),
+        minLoadingTime,
+      ]);
 
-      const fetchPromise = fetch(`${config.backendUrl}/send-email`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const [response] = await Promise.all([fetchPromise, minLoadingTime]);
-      const result = await response.json();
-
-      if (!response.ok) {
-        alert(`Failed to send message: ${result.message}`);
-        return;
-      }
-
-      // Reset all form fields to empty strings
-      // after the email is sent successfully
       if (result.status === 'success') {
         setSubmittedData(formData);
         setShowResponse(true);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          service: [],
-          subject: '',
-          referral: '',
-          message: '',
-        });
+        setFormData(INITIAL_FORM_STATE);
       } else {
         alert('Operation failed: ' + result.message);
       }
@@ -153,7 +97,7 @@ const ContactForm = () => {
                   {key.charAt(0).toUpperCase() + key.slice(1)}
                 </h1>
                 <p className="font-ff-3 text-slate-400 text-lg">
-                  {getDisplayValue(key, value)}
+                  {getDisplayValue(key, value, contact)}
                 </p>
               </div>
             ))}
