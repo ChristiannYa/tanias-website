@@ -1,9 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./src/index.mjs",
+    "start": "node ./src/index.mjs"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +20,6 @@
     "express": "^4.21.2",
     "nodemailer": "^6.9.16",
     "validator": "^13.12.0"
-  }
+  },
+  "type": "module"
 }

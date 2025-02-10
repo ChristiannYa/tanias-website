@@ -1,7 +1,8 @@
+import { useState } from 'react';
+
+import { config } from '../../../config/config';
 import contact from '../../constants/contact';
 import Loading from '../../components/Loading';
-
-import { useState } from 'react';
 
 const ContactForm = () => {
   const [showResponse, setShowResponse] = useState(false);
@@ -32,8 +33,6 @@ const ContactForm = () => {
   };
 
   const handleChange = (e) => {
-    // Update the form data as the user types,
-    // maintaining the current values in real-time.
     setFormData({
       ...formData,
       [e.target.id]: e.target.value,
@@ -70,11 +69,8 @@ const ContactForm = () => {
     e.preventDefault();
     setError(null);
 
-    console.log('Backend URL:', import.meta.env.VITE_BACKEND_URL);
-    console.log(
-      'Full request URL:',
-      `${import.meta.env.VITE_BACKEND_URL}/send-email`
-    );
+    console.log('Backend URL:', config.backendUrl);
+    console.log('Full request URL:', `${config.backendUrl}/send-email`);
 
     const validationError = validateForm();
     if (validationError) {
@@ -89,16 +85,13 @@ const ContactForm = () => {
         setTimeout(resolve, 2000)
       );
 
-      const fetchPromise = fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/send-email`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const fetchPromise = fetch(`${config.backendUrl}/send-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
       const [response] = await Promise.all([fetchPromise, minLoadingTime]);
       const result = await response.json();
