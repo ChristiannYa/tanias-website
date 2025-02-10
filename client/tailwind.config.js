@@ -20,8 +20,11 @@ export default {
       colors: {
         'bgc-1': 'var(--bgc-1)',
         'acc-1': 'var(--acc-1)',
+        'acc-1-hover': 'var(--acc-1-hover)',
         'acc-2': 'var(--acc-2)',
+        'acc-2-hover': 'var(--acc-2-hover)',
         'acc-3': 'var(--acc-3)',
+        'acc-3-hover': 'var(--acc-3-hover)',
         'fc-1': 'var(--fc-1)',
         'fc-2': 'var(--fc-2)',
         'fc-3': 'var(--fc-3)',

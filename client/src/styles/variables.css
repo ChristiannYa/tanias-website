@@ -15,8 +15,11 @@
 
   /* Accents */
   --acc-1: #36bcbe;
+  --acc-1-hover: #279596;
   --acc-2: #9186e6;
+  --acc-2-hover: #7e72db;
   --acc-3: #29bbe5;
+  --acc-3-hover: #1fa4c9;
 
   /* Font color */
   --fc-2: rgb(30 41 59); /* slate-800 */

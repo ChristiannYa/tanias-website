@@ -3,9 +3,8 @@ export const getDisplayValue = (key, value, contactData) => {
     return value.map((s) => contactData.serviceLabels[s]).join(' - ');
   }
 
-  const input = contactData.formInputs.find((input) => input.id === key);
-  if (input?.isRequired === false) {
-    return value.trim() || 'Not Provided';
+  if (!value.trim()) {
+    return 'Not Provided';
   }
 
   return value;
