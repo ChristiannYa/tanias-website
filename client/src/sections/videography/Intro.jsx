@@ -26,7 +26,7 @@ const Intro = () => {
           to={`${import.meta.env.BASE_URL}contact`}
           rel="noopener noreferrer"
         >
-          <CtaButton simpleText="Inquire" />
+          <CtaButton simpleText="Inquire" fontFamily="" />
         </Link>
       </div>
     </section>

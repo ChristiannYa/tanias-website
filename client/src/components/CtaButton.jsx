@@ -1,8 +1,12 @@
 import PropTypes from 'prop-types';
 
-const CtaButton = ({ simpleText, type, disabled }) => {
+const CtaButton = ({ simpleText, type, disabled, fontFamily }) => {
   return (
-    <button className="cssbuttons-io-button" type={type} disabled={disabled}>
+    <button
+      className={`cssbuttons-io-button ${fontFamily}`}
+      type={type}
+      disabled={disabled}
+    >
       {simpleText}
       <div className="icon">
         <svg
@@ -26,6 +30,7 @@ CtaButton.propTypes = {
   simpleText: PropTypes.string.isRequired,
   type: PropTypes.string,
   disabled: PropTypes.bool,
+  fontFamily: PropTypes.string.isRequired,
 };
 
 export default CtaButton;

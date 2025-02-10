@@ -1,7 +1,6 @@
 /* From Uiverse.io by gharsh11032000 */ 
 .cssbuttons-io-button {
   @apply bg-slate-800 text-white;
-  font-family: inherit;
   padding: 0.35em;
   padding-left: 1.2em;
   font-size: 17px;

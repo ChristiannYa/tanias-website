@@ -73,7 +73,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <section className="screen800 mx-auto blur-4 shadow-bs-1">
+      <section className="screen800 mx-auto blur-4 shadow-bs-1 rounded-md">
         <form className="conform" onSubmit={handleSubmit}>
           <div className="flex gap-4 max-md:flex-col">
             <div className="conform__area1">
@@ -112,7 +112,7 @@ const ContactForm = () => {
                 </div>
               </div>
             </div>
-            <div className="conform__area2">
+            <div className="conform__area2 shadow-bs-2">
               <textarea
                 className="conform__input conform__textarea"
                 id="message"
@@ -123,7 +123,11 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="flex justify-end">
-            {isLoading ? <Loading /> : <CtaButton simpleText="Send" />}
+            {isLoading ? (
+              <Loading />
+            ) : (
+              <CtaButton simpleText="Send" fontFamily="font-ff-1" />
+            )}
           </div>
         </form>
       </section>
