@@ -1,19 +1,26 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
+// Update to show the pointer again
+const UI_VERSION = '1.0.0';
+
 const PointingHandEmoji = ({ targetId }) => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(() => {
+    const savedVersion = localStorage.getItem('pointerVersion');
+    return savedVersion !== UI_VERSION;
+  });
 
   useEffect(() => {
-    const handleClick = (e) => {
-      if (e.target.closest('#links-container')) {
+    const handleClick = () => {
+      if (targetId) {
         setIsVisible(false);
+        localStorage.setItem('pointerVersion', UI_VERSION);
       }
     };
 
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
-  }, []);
+  }, [targetId]);
 
   if (!isVisible) return null;
 

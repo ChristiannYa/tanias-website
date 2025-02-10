@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import icons from '../assets/icons';
 import { navLinks } from '../constants';
 import { useState, useEffect } from 'react';
-import PointingHandEmoji from './PointingHandEmoji';
+import CustomPointer from './CustomPointer';
 
 const Nav = ({ isFixed }) => {
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -57,7 +57,7 @@ const Nav = ({ isFixed }) => {
               </p>
             ))}
         </nav>
-        <PointingHandEmoji />
+        <CustomPointer targetId="links-container" />
       </div>
       {/* Page title */}
       {currentPage?.showTitle && (
