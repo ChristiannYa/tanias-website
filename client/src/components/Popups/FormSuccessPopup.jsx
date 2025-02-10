@@ -37,7 +37,7 @@ const FormSuccessPopup = ({ submittedData, onClose, isVisible }) => {
         </div>
         <button
           onClick={() => handlePopupClose(onClose)}
-          className="px-4 py-2 bg-acc-3 hover:bg-acc-3-hover rounded-md font-ff-3"
+          className="px-4 py-2 bg-acc-3 mt-2 hover:bg-acc-3-hover rounded-md font-ff-3"
         >
           ok
         </button>
