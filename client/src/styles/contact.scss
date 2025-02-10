@@ -6,21 +6,15 @@
   flex-direction: column;
 
   &__area1 {
-    // border: solid 1px red;
     display: flex;
     flex-direction: column;
     gap: 6px 0px;
     flex: 4;
-
-    input {
-      // border: solid 1px blue;
-    }
   }
 
   &__area2 {
     flex: 6;
     textarea {
-      // border: solid 1px blue;
     }
   }
 
@@ -67,7 +61,7 @@
   }
 
   &__textarea {
-    border: solid 1px rgba(255, 255, 255, 0.3);
+    border: solid 1px rgba(255, 255, 255);
     overflow-y: scroll;
     width: 100%;
     height: 100%;
@@ -77,8 +71,9 @@
 
   &__submit {
     color: var(--fc-3);
+    border: solid 1px white;
+
     width: fit-content;
-    
     padding: 0px 12px;
 
     @apply page-subheading;

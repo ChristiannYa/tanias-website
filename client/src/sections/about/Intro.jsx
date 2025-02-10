@@ -8,17 +8,15 @@ const Intro = () => {
         <p className="page-info text-fc-3">
           Hi, I am Tania! A professional photographer, specializing in{' '}
           <span className="gradient-text capitalize">
-            corporate event photography
-          </span>
-          ,{' '}
+            corporate event photography,
+          </span>{' '}
           <span className="gradient-text capitalize">
-            real estate photography
-          </span>
-          ,{' '}
+            real estate photography,
+          </span>{' '}
           <span className="gradient-text capitalize">
-            professional headshots
-          </span>
-          , and <span className="gradient-text capitalize">XV</span>.
+            professional headshots,
+          </span>{' '}
+          and <span className="gradient-text capitalize">XV.</span>
         </p>
         <p className="page-info text-fc-3">
           I have a <span className="underlined-1">passion</span> for capturing

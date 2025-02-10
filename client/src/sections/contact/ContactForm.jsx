@@ -4,6 +4,7 @@ import sendContactForm from '../../utils/requests/contact-form/send-contact-form
 import contact from '../../constants/contact';
 import { validateContactForm } from '../../utils/contact-form/formValidation';
 import { INITIAL_FORM_STATE } from '../../utils/contact-form/formHelpers';
+import CtaButton from '../../components/CtaButton';
 import Loading from '../../components/Loading';
 
 import FormSuccessPopup from '../../components/Popups/FormSuccessPopup';
@@ -122,13 +123,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="flex justify-end">
-            <button
-              type="submit"
-              className="conform__submit border relative w-28 h-12"
-              disabled={isLoading}
-            >
-              {isLoading ? <Loading /> : 'Send'}
-            </button>
+            {isLoading ? <Loading /> : <CtaButton simpleText="Send" />}
           </div>
         </form>
       </section>

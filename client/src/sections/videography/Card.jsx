@@ -34,9 +34,9 @@ const Card = () => {
         onTouchEnd={handleLeave}
       >
         <div className="tilting-card-content">
-          <div className="flex flex-col justify-end items-end">
+          <div className="flex flex-col justify-end items-center">
             <h1 className="page-sub-subheading text-xl text-white">
-              creative genius behind the lens
+              videographer & content creator
             </h1>
           </div>
         </div>
