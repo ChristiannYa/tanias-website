@@ -7,6 +7,7 @@ export default {
         'ff-2': 'var(--ff-2)',
         'ff-3': 'var(--ff-3)',
         'ff-4': 'var(--ff-4)',
+        fCormorant: 'var(--fCormorant)',
       },
       fontSize: {
         'fs-0': 'var(--fs-0)',

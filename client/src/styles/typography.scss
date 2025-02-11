@@ -53,7 +53,7 @@
 }
 
 .page-info {
-  font-family: var(--ff-1);
+  font-family: var(--fCormorant);
   font-weight: 300;
   font-size: var(--fs-2);
   text-align: center;
@@ -86,15 +86,16 @@
 }
 
 .small-text {
-  font-family: var(--ff-1);
+  font-family: var(--fCormorant);
   font-size: calc(var(--fs-0) + 3px);
   text-decoration: none;
 }
 
 .footer-text {
   color: var(--fc-3);
-  font-family: var(--ff-1);
+  font-family: var(--ff-3);
   font-size: var(--fs-1);
+  letter-spacing: .5px;
   text-decoration: none;
   text-align: center;
 }
