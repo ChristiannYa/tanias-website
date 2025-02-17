@@ -37,7 +37,7 @@ const Slideshow = () => {
     >
       {landing.map((slide, index) => (
         <img
-          key={slide.class}
+          key={slide.id}
           src={slide.src}
           srcSet={Object.entries(slide.srcset)
             .map(([size, path]) => `${path} ${size}w`)
