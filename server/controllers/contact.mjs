@@ -1,6 +1,6 @@
 import { successResponse, errorResponse } from '../utils/response.mjs';
 import { serviceLabels } from '../constants/serviceLabels.mjs';
-import { sendMail } from '../config/services/mailer.mjs';
+import { sendMail } from '../services/mailer.mjs';
 
 export const sendContactEmail = async (req, res) => {
   const { subject, name, email, phone, referral, service, message } = req.body;

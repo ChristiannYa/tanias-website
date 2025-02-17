@@ -6,7 +6,10 @@ const Slideshow = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    console.log('Current image class:', landing[currentSlide].class);
+    const nextIndex =
+      currentSlide === landing.length - 1 ? 0 : currentSlide + 1;
+    const nextImage = new Image();
+    nextImage.src = landing[nextIndex].src;
   }, [currentSlide]);
 
   useEffect(() => {
@@ -21,7 +24,7 @@ const Slideshow = () => {
     <div
       id="landing-slideshow"
       ref={containerRef}
-      className="slideshow-container wh-screen fixed top-0 left-0 right-0"
+      className="slideshow-container"
     >
       {landing.map((slide, index) => (
         <img
@@ -32,10 +35,10 @@ const Slideshow = () => {
             .join(', ')}
           sizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
           alt={slide.alt}
-          className={`slide w-full h-full object-cover ${slide.class} ${
+          className={`slide ${slide.class} ${
             index === currentSlide ? 'active' : ''
           }`}
-          loading="eager"
+          loading="lazy"
           decoding="async"
         />
       ))}
