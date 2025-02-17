@@ -5,7 +5,10 @@ import { dirname, join, basename, extname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const inputPath = join(__dirname, '../images/home-page/outdoors.jpeg');
+const inputPath = join(
+  __dirname,
+  '../assets/images/home-page/blue-dress-xv.jpeg'
+);
 const sizes = [1920, 1280, 768];
 const quality = 80;
 

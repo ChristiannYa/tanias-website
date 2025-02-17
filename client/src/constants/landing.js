@@ -14,6 +14,17 @@ export const landing = [
   },
   {
     id: 2,
+    src: homePage.wedding,
+    srcset: {
+      1920: homePage.wedding1920,
+      1280: homePage.wedding1280,
+      768: homePage.wedding768,
+    },
+    alt: 'Landing image',
+    class: 'wedding',
+  },
+  {
+    id: 3,
     src: homePage.marioLopez,
     srcset: {
       1920: homePage.marioLopez1920,
@@ -24,7 +35,7 @@ export const landing = [
     class: 'mario-lopez',
   },
   {
-    id: 3,
+    id: 4,
     src: homePage.outdoors,
     srcset: {
       1920: homePage.outdoors1920,

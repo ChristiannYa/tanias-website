@@ -3,6 +3,11 @@ import blueDress1280 from './blue-dress-xv-1280.jpeg';
 import blueDress1920 from './blue-dress-xv-1920.jpeg';
 import blueDress from './blue-dress-xv.jpeg';
 
+import wedding768 from './wedding-768.jpeg';
+import wedding1280 from './wedding-1280.jpeg';
+import wedding1920 from './wedding-1920.jpeg';
+import weding from './wedding.jpeg';
+
 import marioLopez768 from './mario-lopez-768.jpeg';
 import marioLopez1280 from './mario-lopez-1280.jpeg';
 import marioLopez1920 from './mario-lopez-1920.jpeg';
@@ -18,6 +23,10 @@ export default {
   blueDress1280,
   blueDress1920,
   blueDress,
+  wedding768,
+  wedding1280,
+  wedding1920,
+  weding,
   marioLopez768,
   marioLopez1280,
   marioLopez1920,
@@ -25,5 +34,5 @@ export default {
   outdoors768,
   outdoors1280,
   outdoors1920,
-  outdoors
-}
+  outdoors,
+};

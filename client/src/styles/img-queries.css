@@ -14,6 +14,16 @@
   }
 
   .blue-dress-xv.slide {
+    object-position: 80% 0%;
+  }
+}
+
+.wedding {
+  object-position: 0% 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .wedding {
     object-position: 100% 0%;
   }
 }
