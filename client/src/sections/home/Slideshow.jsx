@@ -9,6 +9,15 @@ const Slideshow = () => {
     const nextIndex =
       currentSlide === landing.length - 1 ? 0 : currentSlide + 1;
     const nextImage = new Image();
+
+    nextImage.onload = () => {
+      console.log('Next image preloaded:', nextImage.src);
+    };
+
+    nextImage.onerror = () => {
+      console.error('Failed to preload next image:', nextImage.src);
+    };
+
     nextImage.src = landing[nextIndex].src;
   }, [currentSlide]);
 

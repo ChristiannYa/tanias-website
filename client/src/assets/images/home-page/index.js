@@ -6,7 +6,7 @@ import blueDress from './blue-dress-xv.jpeg';
 import marioLopez768 from './mario-lopez-768.jpeg';
 import marioLopez1280 from './mario-lopez-1280.jpeg';
 import marioLopez1920 from './mario-lopez-1920.jpeg';
-import marioLopez from './mario-lopez-768.jpeg';
+import marioLopez from './mario-lopez.jpeg';
 
 import outdoors768 from './outdoors-768.jpeg';
 import outdoors1280 from './outdoors-1280.jpeg';
