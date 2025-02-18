@@ -30,18 +30,12 @@ const SlideShowContainer = ({
       </div>
 
       <div className="flex gap-x-4 mt-6">
-        <button
-          onClick={onPrevClick}
-          className="rounded-full bg-slate-700 hover:bg-slate-600 [@media(hover:hover)]:hover:bg-slate-600 p-3"
-        >
-          <img src={icons.prev} className="w-3" width={21} height={21} alt="" />
+        <button onClick={onPrevClick} className="slideshow-button">
+          <img src={icons.prev} width={21} height={21} alt="" />
         </button>
 
-        <button
-          onClick={onNextClick}
-          className="rounded-full bg-slate-700 hover:bg-slate-600 [@media(hover:hover)]:hover:bg-slate-600 p-3"
-        >
-          <img src={icons.next} className="w-3" width={21} height={21} alt="" />
+        <button onClick={onNextClick} className="slideshow-button">
+          <img src={icons.next} width={21} height={21} alt="" />
         </button>
       </div>
     </div>
