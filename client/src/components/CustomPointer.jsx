@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 // Update to show the pointer again
-const UI_VERSION = '1.1.0';
+const UI_VERSION = '2.0';
 
 const PointingHandEmoji = ({ targetId }) => {
   const [isVisible, setIsVisible] = useState(() => {
