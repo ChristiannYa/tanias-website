@@ -14,12 +14,14 @@ const Slideshow = () => {
         currentSlide={slideshow1.currentSlide}
         onPrevClick={slideshow1.prevSlide}
         onNextClick={slideshow1.nextSlide}
+        title="portraits"
       />
       <SlideShowContainer
         images={headshots}
         currentSlide={slideshow2.currentSlide}
         onPrevClick={slideshow2.prevSlide}
         onNextClick={slideshow2.nextSlide}
+        title="Headshots"
       />
     </div>
   );

@@ -113,3 +113,9 @@
   -webkit-text-fill-color: transparent;
   font-weight: 500;
 }
+
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
