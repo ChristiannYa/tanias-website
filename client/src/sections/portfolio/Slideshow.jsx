@@ -8,7 +8,7 @@ const Slideshow = () => {
   const slideshow2 = useSlideshow(headshots);
 
   return (
-    <div className="flex flex-col gap-y-16 mt-8 lg:py-4 lg:flex-row lg:gap-x-8">
+    <div className="flex flex-col gap-y-16 mt-8 lg:flex-row lg:gap-x-8">
       <SlideShowContainer
         images={portraits}
         currentSlide={slideshow1.currentSlide}

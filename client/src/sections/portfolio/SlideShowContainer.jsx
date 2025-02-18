@@ -4,10 +4,7 @@ import icons from "../../assets/icons";
 
 const SlideShowContainer = ({ images, currentSlide, onPrevClick, onNextClick }) => {
   return (
-    <div className="rowflex-center gap-x-4">
-      <button onClick={onPrevClick} className="rounded-full">
-        <img src={icons.prev} className="w-8" width={21} height={21} alt="" />
-      </button>
+    <div className="colflex-center gap-x-4">
       <div className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] relative rowflex-center">
         {images.map((slide, index) => (
           <img
@@ -26,9 +23,22 @@ const SlideShowContainer = ({ images, currentSlide, onPrevClick, onNextClick }) 
           />
         ))}
       </div>
-      <button onClick={onNextClick} className="rounded-full">
-        <img src={icons.next} className="w-8" width={21} height={21} alt="" />
-      </button>
+
+      <div className="flex gap-x-4 mt-6">
+        <button
+          onClick={onPrevClick}
+          className="rounded-full bg-slate-700 hover:bg-slate-600 p-3"
+        >
+          <img src={icons.prev} className="w-3" width={21} height={21} alt="" />
+        </button>
+
+        <button
+          onClick={onNextClick}
+          className="rounded-full bg-slate-700 hover:bg-slate-600 p-3"
+        >
+          <img src={icons.next} className="w-3" width={21} height={21} alt="" />
+        </button>
+      </div>
     </div>
   );
 };
