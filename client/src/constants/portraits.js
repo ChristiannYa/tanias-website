@@ -23,16 +23,6 @@ export const portraits = [
   },
   {
     id: 3,
-    src: portrait.potraitThree,
-    srcSet: {
-      1920: portrait.potraitThree1920,
-      1280: portrait.potraitThree1280,
-      768: portrait.potraitThree768,
-    },
-    alt: 'Portrait Session',
-  },
-  {
-    id: 4,
     src: portrait.potraitFour,
     srcSet: {
       1920: portrait.potraitFour1920,
@@ -42,7 +32,7 @@ export const portraits = [
     alt: 'Portrait Session',
   },
   {
-    id: 5,
+    id: 4,
     src: portrait.potraitFive,
     srcSet: {
       1920: portrait.potraitFive1920,
@@ -52,13 +42,13 @@ export const portraits = [
     alt: 'Portrait Session',
   },
   {
-    id: 6,
-    src: portrait.potraitSix,
+    id: 5,
+    src: portrait.weddingPortrait,
     srcSet: {
-      1920: portrait.potraitSix1920,
-      1280: portrait.potraitSix1280,
-      768: portrait.potraitSix768,
+      1920: portrait.weddingPortrait1920,
+      1280: portrait.weddingPortrait1280,
+      768: portrait.weddingPortrait768,
     },
-    alt: 'Portrait Session',
+    alt: 'Wedding Portrait',
   },
 ];

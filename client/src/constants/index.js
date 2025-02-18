@@ -1,4 +1,5 @@
 export * from './nav';
+export * from './headshots';
 export * from './landing';
 export * from './carousel';
 export * from './portraits';
