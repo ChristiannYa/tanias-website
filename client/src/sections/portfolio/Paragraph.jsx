@@ -8,7 +8,7 @@ const Paragraph = () => {
         Professionalism starts with a strong headshot.
       </h2>
       <p className="page-info text-white font-normal">
-        Update your company headshots today. Nothing does that better than a{' '}
+        Nothing does better than a{' '}
         <span className="gradient-text">high-quality professional photo</span>.
         Your image should reflect confidence and approachability. Whether for
         business, acting, or personal branding, a well-crafted image helps you
