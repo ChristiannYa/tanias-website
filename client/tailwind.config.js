@@ -8,6 +8,7 @@ export default {
         'ff-3': 'var(--ff-3)',
         'ff-4': 'var(--ff-4)',
         fCormorant: 'var(--fCormorant)',
+        fNewsreader: 'var(--fNewsreader)',
       },
       fontSize: {
         'fs-0': 'var(--fs-0)',

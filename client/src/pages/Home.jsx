@@ -1,9 +1,11 @@
 import Slideshow from '../sections/home/Slideshow';
+import SlideshowText from '../sections/home/SlideshowText';
 
 const Home = () => {
   return (
-    <div className="wh-screen h-fit pt-2">
+    <div className="wh-screen">
       <Slideshow />
+      <SlideshowText />
     </div>
   );
 };
