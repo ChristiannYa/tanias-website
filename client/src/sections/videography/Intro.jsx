@@ -9,15 +9,15 @@ const Intro = () => {
       </div>
       <div className="page-info text-fc-4">
         <p>
-          Whether your are looking for{' '}
+          Her creativity and expertise will elevate your brand and captivate
+          your audience. Whether you&apos;re looking for{' '}
           <span className="gradient-text">
-            behind the scenes footage, cinematic films, social media content, or
-            highlight videos,
-          </span>{' '}
-          she will ensure your project stands out, her creativity and expertise
-          will elevate your brand and captivate your audience.{' '}
-          <span className="gradient-text">Contact her</span> today for more
-          details about custom packages and how she can bring your vision to
+            cinematic films, social media content, behind the scenes footage, or
+            highlight videos,{' '}
+          </span>
+          she will ensure your project stands out.{' '}
+          <span className="gradient-text">Inquire today</span> to learn more
+          about custom videography packages and how she can bring your vision to
           life.
         </p>
       </div>
