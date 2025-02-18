@@ -23,12 +23,22 @@ export const headshots = [
   },
   {
     id: 3,
-    src: headshot.nikeShirtOne,
+    src: headshot.ralphShirt,
     srcSet: {
-      1920: headshot.nikeShirtOne1920,
-      1280: headshot.nikeShirtOne1280,
-      768: headshot.nikeShirtOne768,
+      1920: headshot.ralphShirt1920,
+      1280: headshot.ralphShirt1280,
+      768: headshot.ralphShirt768,
     },
-    alt: 'Nike Shirt Model Picture',
-  }
-]
+    alt: 'Ralph Shirt Picture',
+  },
+  {
+    id: 4,
+    src: headshot.uarmorBlack,
+    srcSet: {
+      1920: headshot.uarmorBlack1920,
+      1280: headshot.uarmorBlack1280,
+      768: headshot.uarmorBlack768,
+    },
+    alt: 'Uarmor Black Picture',
+  },
+];

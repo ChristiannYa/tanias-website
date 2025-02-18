@@ -1,7 +1,7 @@
-import Slideshow from '../sections/portraits/Slideshow';
+import Slideshow from '../sections/portfolio/Slideshow';
 import BookButton from '../components/BookButton';
 
-const Portraits = () => {
+const Portfolio = () => {
   return (
     <div className="colflex-center gap-y-8">
       <Slideshow />
@@ -12,4 +12,4 @@ const Portraits = () => {
   );
 };
 
-export default Portraits;
+export default Portfolio;

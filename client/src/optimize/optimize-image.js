@@ -7,7 +7,7 @@ const __dirname = dirname(__filename);
 
 const inputPath = join(
   __dirname,
-  '../assets/images/headshots/nike-shirt-1.jpeg'
+  '../assets/images/headshots/ralph-shirt.jpeg'
 );
 const sizes = [1920, 1280, 768];
 const quality = 80;
