@@ -3,7 +3,19 @@ import { landing } from '../../constants';
 
 const Slideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
   const containerRef = useRef(null);
+
+  useEffect(() => {
+    setIsInitialLoad(false);
+  }, []);
+
+  useEffect(() => {
+    const firstSlide = document.querySelector('.slide');
+    if (firstSlide) {
+      firstSlide.classList.add('active');
+    }
+  }, []);
 
   useEffect(() => {
     const nextIndex =
@@ -45,7 +57,9 @@ const Slideshow = () => {
           sizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
           alt={slide.alt}
           className={`slide ${slide.class} ${
-            index === currentSlide ? 'active' : ''
+            index === currentSlide || (isInitialLoad && index === 0)
+              ? 'active'
+              : ''
           }`}
           loading="lazy"
           decoding="async"
