@@ -19,7 +19,7 @@ export const packages = [
       1920: { default: package1.sizes[1920].default },
     },
     desc: ['10 digitals', '30 min'],
-    price: 150,
+    price: 175,
   },
   {
     id: 'package2',
@@ -30,8 +30,8 @@ export const packages = [
       1280: { default: package2.sizes[1280].default },
       1920: { default: package2.sizes[1920].default },
     },
-    desc: ['5 hr photo coverage'],
-    price: 1100,
+    desc: ['6 hr photo coverage'],
+    price: 1450,
   },
   {
     id: 'package3',
@@ -54,8 +54,8 @@ export const packages = [
       1280: { default: package4.sizes[1280].default },
       1920: { default: package4.sizes[1920].default },
     },
-    desc: ['3 hr photo coverage'],
-    price: 600,
+    desc: ['4 hr photo coverage'],
+    price: 950,
   },
   {
     id: 'package5',
@@ -79,6 +79,6 @@ export const packages = [
       1920: { default: package6.sizes[1920].default },
     },
     desc: ['15 digitals', '1 hr'],
-    price: 300,
+    price: 400,
   },
 ];
