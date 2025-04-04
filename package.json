@@ -10,9 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@gsap/react": "^2.1.2",
     "express": "^4.21.2",
-    "gsap": "^3.12.7",
     "nodemailer": "^6.9.16"
   }
 }
