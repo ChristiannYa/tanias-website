@@ -1,39 +1,41 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import { reImages } from "../../constants/real-estate";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = () => {
   const containerRef = useRef(null);
 
-  useGSAP(() => {
-    if (containerRef.current) {
-      const images = containerRef.current.querySelectorAll(".rp");
+  useEffect(() => {
+    if (!containerRef.current) return;
 
-      images.forEach((box) => {
-        gsap.fromTo(
-          box,
-          {
-            scale: 0.6,
-            opacity: 0,
-          },
-          {
-            scrollTrigger: {
-              trigger: box,
-              start: `top 80%`,
-              type: "touch,pointer",
-            },
-            opacity: 1,
-            scale: 1,
-            duration: 0.8,
+    const images = containerRef.current.querySelectorAll(".rp");
+
+    images.forEach((img) => {
+      gsap.set(img, { scale: 0.6, opacity: 0 });
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            gsap.to(entry.target, {
+              opacity: 1,
+              scale: 1,
+              duration: 0.8,
+              onComplete: () => observer.unobserve(entry.target),
+            });
           }
-        );
-      });
-    }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -20% 0px",
+      }
+    );
+
+    images.forEach((img) => observer.observe(img));
+
+    return () => observer.disconnect();
   }, []);
 
   return (
