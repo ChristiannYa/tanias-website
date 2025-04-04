@@ -25,6 +25,7 @@ const Gallery = () => {
             scrollTrigger: {
               trigger: box,
               start: `top 80%`,
+              type: "touch,pointer",
             },
             opacity: 1,
             scale: 1,
