@@ -1,9 +1,19 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { reImages } from "../../constants/real-estate";
 
 const Gallery = () => {
   const containerRef = useRef(null);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 684);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 684);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -22,6 +32,7 @@ const Gallery = () => {
               opacity: 1,
               scale: 1,
               duration: 0.8,
+              delay: isLargeScreen ? 0.2 : 0,
               onComplete: () => observer.unobserve(entry.target),
             });
           }
@@ -36,7 +47,7 @@ const Gallery = () => {
     images.forEach((img) => observer.observe(img));
 
     return () => observer.disconnect();
-  }, []);
+  }, [isLargeScreen]);
 
   return (
     <section className="screen1200 mx-auto">
