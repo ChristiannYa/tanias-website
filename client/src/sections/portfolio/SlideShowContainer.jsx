@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import icons from '../../assets/icons';
+import icons from "../../assets/icons";
 
 const SlideShowContainer = ({
   images,
@@ -19,11 +19,11 @@ const SlideShowContainer = ({
               src={slide.src}
               alt={slide.alt}
               className={`shadow-bs-1 absolute object-contain h-full ${
-                index === currentSlide ? 'block' : 'hidden'
+                index === currentSlide ? "block" : "hidden"
               }`}
               srcSet={Object.entries(slide.srcSet)
                 .map(([size, path]) => `${path} ${size}w`)
-                .join(', ')}
+                .join(", ")}
               sizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
               loading="eager"
               decoding="async"

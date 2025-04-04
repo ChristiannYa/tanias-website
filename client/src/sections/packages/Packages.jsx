@@ -1,21 +1,21 @@
-import { Fragment, useEffect } from 'react';
-import { packages } from '../../constants/index';
+import { Fragment, useEffect } from "react";
+import { packages } from "../../constants/index";
 
 const Packages = () => {
   useEffect(() => {
-    const blurDivs = document.querySelectorAll('.pck__blur');
+    const blurDivs = document.querySelectorAll(".pck__blur");
 
     blurDivs.forEach((div) => {
-      const img = div.querySelector('img');
+      const img = div.querySelector("img");
 
       const loaded = () => {
-        div.classList.add('loaded');
+        div.classList.add("loaded");
       };
 
       if (img.complete) {
         loaded();
       } else {
-        img.addEventListener('load', loaded);
+        img.addEventListener("load", loaded);
       }
     });
   }, []);

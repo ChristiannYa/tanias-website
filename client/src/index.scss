@@ -1,3 +1,20 @@
+// Styles
+@use './styles/variables.css';
+@use './styles/typography.scss';
+@use './styles/nav.scss';
+@use './styles/landing-slideshow.css';
+@use './styles/img-queries.css';
+@use './styles/carousel.css';
+@use './styles/packages.scss';
+@use './styles/faqs.scss';
+@use './styles/card.css';
+@use './styles/aurora.css';
+@use './styles/contact.scss';
+@use './styles/loading.css';
+@use './styles/ctaButton.scss';
+@use './styles/bookButton.css';
+@use './styles/popup.css';
+
 // Font imports
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -5,23 +22,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
-
-// Styles
-@import './styles/variables.css';
-@import './styles/typography.scss';
-@import './styles/nav.scss';
-@import './styles/landing-slideshow.css';
-@import './styles/img-queries.css';
-@import './styles/carousel.css';
-@import './styles/packages.scss';
-@import './styles/faqs.scss';
-@import './styles/card.css';
-@import './styles/aurora.css';
-@import './styles/contact.scss';
-@import './styles/loading.css';
-@import './styles/ctaButton.scss';
-@import './styles/bookButton.css';
-@import './styles/popup.css';
 
 // Directives
 @tailwind base;
