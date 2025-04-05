@@ -1,6 +1,8 @@
+import { vds2 } from "../../assets/images/videography";
+
 const Card = () => {
   const handleInteraction = (e) => {
-    const card = e.currentTarget.querySelector('.tilting-card-content');
+    const card = e.currentTarget.querySelector(".tilting-card-content");
     const rect = e.currentTarget.getBoundingClientRect();
 
     // Coordinates for both mouse and touch events
@@ -20,8 +22,8 @@ const Card = () => {
   };
 
   const handleLeave = (e) => {
-    const card = e.currentTarget.querySelector('.tilting-card-content');
-    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+    const card = e.currentTarget.querySelector(".tilting-card-content");
+    card.style.transform = "perspective(1000px) rotateX(0) rotateY(0)";
   };
 
   return (
@@ -33,7 +35,10 @@ const Card = () => {
         onMouseLeave={handleLeave}
         onTouchEnd={handleLeave}
       >
-        <div className="tilting-card-content">
+        <div
+          className="tilting-card-content"
+          style={{ backgroundImage: `url(${vds2.deafult})` }}
+        >
           <div className="flex flex-col justify-end items-center">
             <h1 className="page-sub-subheading text-xl text-white">
               videographer & content creator
