@@ -5,7 +5,7 @@ const BookButton = () => {
     <div className="barcode-wrap">
       <Link
         id="barcode-link"
-        to="https://form.jotform.com/Thaniagutti/photography-session-booking-form"
+        to="https://form.jotform.com/251395935823062"
         target="_blank"
         rel="noopener noreferrer"
       >
