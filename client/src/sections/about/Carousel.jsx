@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { carousel } from "../../constants"
+import { carousel } from "../../constants";
 
 const Carousel = () => {
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
-    
+
     if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       addAnimation();
     }
@@ -26,7 +26,9 @@ const Carousel = () => {
 
   return (
     <section className="scroller-container colflex-center screen700">
-      <p className="page-subheading text-fc-3" id="our-clients">Our Clients</p>
+      <p className="page-subheading text-fc-3" id="our-clients">
+        Companies we&apos;ve proudly work with:
+      </p>
       <div className="scroller" data-direction="left" data-speed="slow">
         <div className="tag-list scroller__inner">
           {carousel.map((logo) => (
@@ -35,7 +37,7 @@ const Carousel = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Carousel
+export default Carousel;
