@@ -25,7 +25,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <section className="scroller-container colflex-center screen700">
+    <section className="py-5 mx-auto scroller-container flex flex-col justify-center items-center screen700">
       <p className="text-fc-3 text-[1.75rem] text-center font-ff-3 font-light uppercase" id="our-clients">
         Companies we&apos;ve proudly work with:
       </p>

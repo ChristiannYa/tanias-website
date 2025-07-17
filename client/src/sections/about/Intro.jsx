@@ -3,8 +3,8 @@ import icons from '../../assets/icons';
 
 const Intro = () => {
   return (
-    <section className="colflex-center screen800">
-      <div className="font-fLato text-fc-3 text-center text-2xl font-light w-full">
+    <section className="flex flex-col justify-center items-center screen800">
+      <div className="font-fCormorant text-fc-1 text-center text-2xl font-light w-full">
         <p>
           Hi, I am Tania! A professional photographer, specializing in{' '}
           <span className="gradient-text capitalize">
@@ -40,12 +40,12 @@ const Intro = () => {
           loading="lazy"
           className="w-[220px] max-md:w-[180px] my-4 shadow-bs-1"
         />
-        <p className="small-text text-fc-3 text-center text-lg">
+        <p className="small-text text-fc-1 text-center text-lg">
           &quot;Photography is the art of freezing time, keeping the essence of
           that very moment beyond life.&quot; <br />- Tania Gutti
         </p>
         <div className="my-4">
-          <p className="small-text text-center font-ff-2 text-xs text-fc-3">
+          <p className="small-text text-center font-ff-2 text-xs text-fc-2">
             Proud member of
           </p>
           <img
