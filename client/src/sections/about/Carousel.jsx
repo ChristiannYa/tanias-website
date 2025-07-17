@@ -26,7 +26,7 @@ const Carousel = () => {
 
   return (
     <section className="scroller-container colflex-center screen700">
-      <p className="page-subheading text-fc-3" id="our-clients">
+      <p className="text-fc-3 text-[1.75rem] text-center font-ff-3 font-light uppercase" id="our-clients">
         Companies we&apos;ve proudly work with:
       </p>
       <div className="scroller" data-direction="left" data-speed="slow">

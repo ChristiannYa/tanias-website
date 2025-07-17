@@ -4,8 +4,8 @@ import icons from '../../assets/icons';
 const Intro = () => {
   return (
     <section className="colflex-center screen800">
-      <div className="w-full">
-        <p className="page-info text-fc-3">
+      <div className="font-fLato text-fc-3 text-center text-2xl font-light w-full">
+        <p>
           Hi, I am Tania! A professional photographer, specializing in{' '}
           <span className="gradient-text capitalize">
             corporate event photography,
@@ -18,16 +18,16 @@ const Intro = () => {
           </span>{' '}
           and <span className="gradient-text capitalize">XV.</span>
         </p>
-        <p className="page-info text-fc-3">
+        <p>
           I have a <span className="underlined-1">passion</span> for capturing
           candid, authentic moments that tell a story, and I am here to make
           your vision a reality!
         </p>
-        <p className="page-info text-fc-3">
+        <p>
           Every single photoshoot inspires me to tailor very unique{' '}
           <span className="underlined-1">photos</span>.
         </p>
-        <p className="page-info text-fc-3">
+        <p>
           Take a look around and explore my galleries. I am excited to create
           something amazing together!
         </p>

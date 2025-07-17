@@ -10,15 +10,15 @@ const SlideShowContainer = ({
   title,
 }) => {
   return (
-    <div className="">
+    <div>
       <div className="colflex-center gap-x-4 relative">
-        <div className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] relative rowflex-center">
+        <div className="bg-purple-600/30 w-[450px] h-[675px] md:w-[400px] md:h-[600px] relative rowflex-center">
           {images.map((slide, index) => (
             <img
               key={slide.id}
               src={slide.src}
               alt={slide.alt}
-              className={`shadow-bs-1 absolute object-contain h-full ${
+              className={`shadow-bs-1 absolute object-cover w-full h-full ${
                 index === currentSlide ? "block" : "hidden"
               }`}
               srcSet={Object.entries(slide.srcSet)

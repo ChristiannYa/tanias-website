@@ -10,6 +10,7 @@ export default {
         fCormorant: "var(--fCormorant)",
         fNewsreader: "var(--fNewsreader)",
         fCinzel: "var(--fCinzel)",
+        fLato: "var(--fLato)",
       },
       fontSize: {
         "fs-0": "var(--fs-0)",

@@ -30,7 +30,7 @@ export const packages = [
       1280: { default: package2.sizes[1280].default },
       1920: { default: package2.sizes[1920].default },
     },
-    desc: ['6 hr photo coverage'],
+    desc: ['5 hr photo coverage'],
     price: 1450,
   },
   {

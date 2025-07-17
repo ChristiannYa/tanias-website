@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from "react";
+import { useEffect } from "react";
 import { packages } from "../../constants/index";
 
 const Packages = () => {
@@ -47,16 +47,6 @@ const Packages = () => {
                   alt={pck.title}
                   loading="lazy"
                 />
-              </div>
-              <div className="package-desc blur-3 w-full rowflex-center gap-x-1 absolute bottom-0 left-0">
-                {pck.desc.map((desc, index) => (
-                  <Fragment key={index}>
-                    <p>{desc}</p>
-                    {index < pck.desc.length - 1 && <span>|</span>}
-                  </Fragment>
-                ))}
-                <span>|</span>
-                <p>${pck.price.toLocaleString()} usd</p>
               </div>
             </div>
           </div>

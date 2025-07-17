@@ -12,7 +12,7 @@ const Faqs = () => {
 
   return (
     <section className="flex flex-col screen800">
-      <div className=''>
+      <div>
         <h2 className="page-sub-subheading text-fc-3">
           FAQs
         </h2>
@@ -36,7 +36,7 @@ const Faqs = () => {
               </span>
             </button>
           </div>
-          <div className="question-text small-text text-fc-3 hover:cursor-default pb-4">
+          <div className="question-text text-fc-3 text-lg font-fLato font-light leading-snug cursor-default pb-4">
             {question.a.map((answer, index) => (
               <p key={index}>{answer}</p>
             ))}
