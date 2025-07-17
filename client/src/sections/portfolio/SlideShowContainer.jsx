@@ -12,7 +12,7 @@ const SlideShowContainer = ({
   return (
     <div>
       <div className="colflex-center gap-x-4 relative">
-        <div className="bg-purple-600/30 w-[450px] h-[675px] md:w-[400px] md:h-[600px] relative rowflex-center">
+        <div className="text-white/10 w-[450px] h-[675px] md:w-[400px] md:h-[600px] relative rowflex-center">
           {images.map((slide, index) => (
             <img
               key={slide.id}
