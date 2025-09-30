@@ -27,11 +27,11 @@ const Footer = () => {
         <div className="colflex-center">
           <p className="footer-text">Designed by</p>
           <a
-            href="https://christianwebdev.com"
+            href="https://christianweb.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="footer-text capitalize">chriswebdev</p>
+            <p className="footer-text capitalize">christianwebdev</p>
           </a>
         </div>
         {/* <Translate /> */}
