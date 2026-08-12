@@ -2,7 +2,7 @@ import {
   reSunsetImg1, reSunsetImg2, reSunsetImg3, reSunsetImg4, reSunsetImg5, reSunsetImg6, reSunsetImg7,
   reImg6, reImg7, reImg8, reImg10, reImg12, reImg17, reImg18,
   reImg19, reImg20, reImg21, reImg22, reImg23, reImg24, 
-  reImg26, reImg27, reImg28, reImg29, reImg30, reImg32, reImg33, reImg36, reImg37, reImg38
+  reImg28, reImg29, reImg30, reImg32, reImg33, reImg36, reImg37, reImg38
 } from '../assets/images/real-estate';
 
 export const reImages = [
@@ -26,8 +26,6 @@ export const reImages = [
   { id: 22, ...reImg22 },
   { id: 23, ...reImg23 },
   { id: 24, ...reImg24 },
-  { id: 26, ...reImg26 },
-  { id: 27, ...reImg27 },
   { id: 28, ...reImg28 },
   { id: 29, ...reImg29 },
   { id: 30, ...reImg30 },

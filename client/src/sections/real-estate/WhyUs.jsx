@@ -3,7 +3,7 @@ import { whyUs } from "../../constants"
 const WhyUs = () => {
   return (
     <section className="w-[92%] mx-auto">
-      <h1 className="page-sub-subheading text-acc-2">
+      <h1 className="page-sub-subheading !font-fBodoni !uppercase gradient-text">
         why choose us?
       </h1>
       <div className="grid-300gr mt-8">

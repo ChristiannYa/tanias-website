@@ -19,8 +19,6 @@ import re21 from './re-21.jpeg';
 import re22 from './re-22.jpeg';
 import re23 from './re-23.jpeg';
 import re24 from './re-24.jpeg';
-import re26 from './re-26.jpeg';
-import re27 from './re-27.jpeg';
 import re28 from './re-28.jpeg';
 import re29 from './re-29.jpeg';
 import re30 from './re-30.jpeg';
@@ -63,8 +61,6 @@ export const reImg21 = { default: re21, small: re21Small }
 export const reImg22 = { default: re22, small: re22Small }
 export const reImg23 = { default: re23, small: re23Small }
 export const reImg24 = { default: re24, small: re24Small }
-export const reImg26 = { default: re26 }
-export const reImg27 = { default: re27 }
 export const reImg28 = { default: re28 }
 export const reImg29 = { default: re29 }
 export const reImg30 = { default: re30 }
