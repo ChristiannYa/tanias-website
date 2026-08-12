@@ -20,11 +20,11 @@ const Footer = () => {
         </aside>
         <div className="colflex-center gap-1">
           <p className="footer-text capitalize">
-            ©2025 tania gutti photography
+            ©2026 haute bokeh by tania gutti
           </p>
           <p className="footer-text capitalize">all rights reserved</p>
         </div>
-        <div className="colflex-center">
+        <div className="colflex-center opacity-50">
           <p className="footer-text">Designed by</p>
           <a
             href="https://christianweb.dev"

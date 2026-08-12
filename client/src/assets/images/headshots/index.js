@@ -8,11 +8,6 @@ import dentistTwo1280 from './dentist-2-1280.jpeg';
 import dentistTwo1920 from './dentist-2-1920.jpeg';
 import dentistTwo from './dentist-2.jpeg';
 
-import uarmorBlack768 from './uarmor-black-768.jpeg';
-import uarmorBlack1280 from './uarmor-black-1280.jpeg';
-import uarmorBlack1920 from './uarmor-black-1920.jpeg';
-import uarmorBlack from './uarmor-black.jpeg';
-
 import ralphShirt768 from './ralph-shirt-768.jpeg';
 import ralphShirt1280 from './ralph-shirt-1280.jpeg';
 import ralphShirt1920 from './ralph-shirt-1920.jpeg';
@@ -27,10 +22,6 @@ export default {
   dentistTwo1280,
   dentistTwo1920,
   dentistTwo,
-  uarmorBlack768,
-  uarmorBlack1280,
-  uarmorBlack1920,
-  uarmorBlack,
   ralphShirt768,
   ralphShirt1280,
   ralphShirt1920,
