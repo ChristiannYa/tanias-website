@@ -6,7 +6,7 @@ const SlideshowText = () => {
                     haute bokeh
                 </h1>
                 <h1 className="font-fCinzel text-xs sm:text-xl tracking-widest text-white">
-                    Photography | Films | Content Creation
+                    Media Production
                 </h1>
             </div>
         </div>

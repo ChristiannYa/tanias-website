@@ -13,7 +13,7 @@ export const navLinks = [
         id: 4,
         path: "/packages",
         label: "photography packages",
-        title: "pricing",
+        title: "studio and outdoor sessions",
         showTitle: true,
     },
     {
@@ -24,16 +24,9 @@ export const navLinks = [
         showTitle: true,
     },
     {
-        id: 6,
-        path: "/portfolio",
-        label: "portraits and headshots",
-        title: "portfolio",
-        showTitle: true,
-    },
-    {
         id: 7,
         path: "/videography",
-        label: "videography and content creation",
+        label: "videography & content creation",
         title: "videography",
         showTitle: true,
     },

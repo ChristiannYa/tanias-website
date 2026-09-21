@@ -2,58 +2,70 @@ import { useEffect } from "react";
 import { packages } from "../../constants/index";
 
 const Packages = () => {
-  useEffect(() => {
-    const blurDivs = document.querySelectorAll(".pck__blur");
+    useEffect(() => {
+        const blurDivs = document.querySelectorAll(".pck__blur");
 
-    blurDivs.forEach((div) => {
-      const img = div.querySelector("img");
+        blurDivs.forEach((div) => {
+            const img = div.querySelector("img");
 
-      const loaded = () => {
-        div.classList.add("loaded");
-      };
+            const loaded = () => {
+                div.classList.add("loaded");
+            };
 
-      if (img.complete) {
-        loaded();
-      } else {
-        img.addEventListener("load", loaded);
-      }
-    });
-  }, []);
+            if (img.complete) {
+                loaded();
+            } else {
+                img.addEventListener("load", loaded);
+            }
+        });
+    }, []);
 
-  return (
-    <section className="pck">
-      <div className="pck__grid">
-        {packages.map((pck) => (
-          <div key={pck.id} id={`${pck.id}`} className="pck__pck">
-            <div>
-              <h2 className="package-title capitalize text-center">
-                {pck.title}
-              </h2>
+    return (
+        <section className="pck">
+            <div className="pck__grid">
+                {packages.map((pck) => (
+                    <div
+                        key={pck.id}
+                        id={`${pck.id}`}
+                        className="pck__pck"
+                    >
+                        <div>
+                            <h2 className="package-title text-center">
+                                {pck.title}
+                            </h2>
+                            <div className="relative rounded-sm overflow-hidden shadow-bs-1">
+                                <div
+                                    className="pck__blur"
+                                    style={{
+                                        backgroundImage: `url(${pck.small})`,
+                                    }}
+                                >
+                                    <img
+                                        src={pck.default}
+                                        id={`pck__${pck.id}-img`}
+                                        srcSet={`
+                                            ${pck.sizes[768].default} 768w,
+                                            ${pck.sizes[1280].default} 1280w,
+                                            ${pck.sizes[1920].default} 1920w
+                                        `}
+                                        sizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
+                                        alt={pck.title}
+                                        loading="lazy"
+                                        className={`w-full h-full object-cover ${
+                                            pck.title.toLowerCase() ===
+                                            "headshots"
+                                                ? "!object-top"
+                                                : "object-center"
+                                        }`}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
-            <div className="relative rounded-sm overflow-hidden shadow-bs-1">
-              <div
-                className="pck__blur"
-                style={{ backgroundImage: `url(${pck.small})` }}
-              >
-                <img
-                  src={pck.default}
-                  id={`pck__${pck.id}-img`}
-                  srcSet={`
-                    ${pck.sizes[768].default} 768w,
-                    ${pck.sizes[1280].default} 1280w,
-                    ${pck.sizes[1920].default} 1920w
-                  `}
-                  sizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
-                  alt={pck.title}
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default Packages;

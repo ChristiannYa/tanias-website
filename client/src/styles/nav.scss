@@ -26,9 +26,7 @@
   float: left;
   z-index: 3;
 
-  @apply blur-2 cursor-pointer rowflex-center absolute left-0 top-0;
-
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     height: 68px;
     min-height: 68px;
     margin: 0.9rem 0 0 0.5rem;
@@ -72,7 +70,7 @@
   z-index: 2;
   @apply blur-3 rounded-none wh-screen m-0 fixed top-0 left-0;
 
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     @apply flex flex-col justify-start;
   }
 
@@ -91,7 +89,7 @@
   opacity: 1;
   @apply colflex-center w-fit h-fit visible gap-y-1;
 
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     @apply mt-20;
   }
 }

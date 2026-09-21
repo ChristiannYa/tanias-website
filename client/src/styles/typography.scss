@@ -1,14 +1,12 @@
 .page-title {
-  background: linear-gradient(
-    90deg,
-    var(--acc-2),
-    var(--acc-3),
-    white,
-    white,
-  );
+  background: linear-gradient(90deg,
+      var(--acc-2),
+      var(--acc-3),
+      white,
+      white,
+    );
   background-size: 300%;
   animation: gradient 4s ease infinite;
-
   color: white;
   font-family: var(--ff-3);
   font-size: var(--fs-6);
@@ -17,8 +15,9 @@
   text-align: center;
   letter-spacing: 0.5px;
 
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     font-size: calc(var(--fs-6) - 1.8rem);
+    line-height: 3.2rem;
   }
 
   @apply background-clip;
@@ -61,7 +60,7 @@
 
 .package-title {
   text-transform: uppercase;
-  font-family: var(--ff-3);
+  font-family: var(--fAnton);
   font-size: var(--fs-2);
   font-weight: 400;
 
@@ -76,11 +75,12 @@
 
 .link {
   color: var(--fc-3);
-  font-family: var(--ff-3);
+  font-family: var(--fAnton);
   font-size: var(--fs-3);
   text-decoration: none;
+  text-transform: uppercase;
 
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     font-size: calc(var(--fs-3) - .2rem);
   }
 }
