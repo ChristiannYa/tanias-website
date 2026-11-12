@@ -4,7 +4,7 @@ export const config = {
         origins: [
             'https://taniagutti.netlify.app',
             'https://taniagutti.com',
-            'https://www.hautebokeh.com',
+            'https://hautebokeh.com',
             'https://www.hautebokeh.com',
             'http://localhost:5173',
         ],
