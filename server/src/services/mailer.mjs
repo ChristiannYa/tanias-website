@@ -1,8 +1,23 @@
-import nodemailer from 'nodemailer';
-import { emailConfig } from '../config/email/email.mjs';
+export const sendMail = async ({ from, to, subject, text }) => {
+    const res = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+            Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            from: process.env.RESEND_FROM,
+            to: [to],
+            reply_to: from,
+            subject,
+            text,
+        }),
+        signal: AbortSignal.timeout(10000),
+    });
 
-const transporter = nodemailer.createTransport(emailConfig);
+    if (!res.ok) {
+        throw new Error(`Resend ${res.status}: ${await res.text()}`);
+    }
 
-export const sendMail = async (mailOptions) => {
-  return await transporter.sendMail(mailOptions);
+    return res.json();
 };
