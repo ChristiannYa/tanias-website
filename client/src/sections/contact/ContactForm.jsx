@@ -85,7 +85,8 @@ const ContactForm = () => {
                                         className="conform__input"
                                         type={input.type}
                                         id={input.id}
-                                        placeholder={input.placeholder}
+                                        placeholder={`${input.placeholder}${input.isRequired ? ' *' : ''}`}
+                                        aria-required={input.isRequired}
                                         value={formData[input.id]}
                                         onChange={handleChange}
                                     />
@@ -94,7 +95,7 @@ const ContactForm = () => {
 
                             {/* service needed */}
                             <div className="conform__services">
-                                <p className="conform__services-title">I am interested in:</p>
+                                <p className="conform__services-title">I am interested in: *</p>
                                 <div className="conform__services-options">
                                     {contact.serviceOptions.map((option) => (
                                         <label
@@ -119,7 +120,7 @@ const ContactForm = () => {
                             <textarea
                                 className="conform__input conform__textarea"
                                 id="message"
-                                placeholder="message"
+                                placeholder="message *"
                                 value={formData.message}
                                 onChange={handleChange}
                             />
