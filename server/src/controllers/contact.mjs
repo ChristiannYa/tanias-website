@@ -8,6 +8,7 @@ export const sendContactEmail = async (req, res) => {
     const mailOptions = {
         from: email,
         to: process.env.EMAIL_USER,
+        subject: `Contact form message from ${name}`,
         text: `
       From: ${name}
       Email: ${email}
