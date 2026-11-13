@@ -1,4 +1,4 @@
-export const sendMail = async ({ from, to, text }) => {
+export const sendMail = async ({ from, to, text, subject }) => {
     const res = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
@@ -8,6 +8,7 @@ export const sendMail = async ({ from, to, text }) => {
         body: JSON.stringify({
             from: process.env.RESEND_FROM,
             to: [to],
+            subject,
             reply_to: from,
             text,
         }),
