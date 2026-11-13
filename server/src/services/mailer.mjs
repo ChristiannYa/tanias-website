@@ -1,4 +1,4 @@
-export const sendMail = async ({ from, to, subject, text }) => {
+export const sendMail = async ({ from, to, text }) => {
     const res = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
@@ -9,7 +9,6 @@ export const sendMail = async ({ from, to, subject, text }) => {
             from: process.env.RESEND_FROM,
             to: [to],
             reply_to: from,
-            subject,
             text,
         }),
         signal: AbortSignal.timeout(10000),

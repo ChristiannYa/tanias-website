@@ -3,12 +3,11 @@ import { serviceLabels } from '../constants/serviceLabels.mjs';
 import { sendMail } from '../services/mailer.mjs';
 
 export const sendContactEmail = async (req, res) => {
-    const { subject, name, email, phone, referral, service, message } = req.body;
+    const { name, email, phone, referral, service, message } = req.body;
 
     const mailOptions = {
         from: email,
         to: process.env.EMAIL_USER,
-        subject: `Contact Form: ${subject}`,
         text: `
       From: ${name}
       Email: ${email}

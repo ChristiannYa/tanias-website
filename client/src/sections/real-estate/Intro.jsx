@@ -1,7 +1,7 @@
 const Intro = () => {
     return (
         <section className="screen1200 mx-auto colflex-center text-center">
-            <h1 className="uppercase page-subheading gradient-text !font-fSyncopate !font-[700]">
+            <h1 className="uppercase page-subheading gradient-text !font-fSyncopate">
                 Make Your Listing Stand Out
             </h1>
             <div className="page-info">
