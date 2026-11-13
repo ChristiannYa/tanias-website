@@ -51,12 +51,11 @@ const Packages = () => {
                                         sizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
                                         alt={pck.title}
                                         loading="lazy"
-                                        className={`w-full h-full object-cover ${
-                                            pck.title.toLowerCase() ===
+                                        className={`w-full h-full object-cover ${pck.title.toLowerCase() ===
                                             "headshots"
-                                                ? "!object-top"
-                                                : "object-center"
-                                        }`}
+                                            ? "!object-top"
+                                            : "object-center"
+                                            }`}
                                     />
                                 </div>
                             </div>

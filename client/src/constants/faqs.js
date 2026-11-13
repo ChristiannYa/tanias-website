@@ -19,7 +19,7 @@ export const faqs = [
         id: 3,
         q: "What are your rates for photo sessions and event coverage?",
         a: [
-            "Our standard photography sessions start at $175 USD (2 hour minimum) and $350 per hour for event coverage.",
+            "Our standard photography sessions start at $225 USD and $350 per hour for event coverage.",
         ],
     },
     {

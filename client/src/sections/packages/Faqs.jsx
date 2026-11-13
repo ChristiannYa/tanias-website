@@ -18,9 +18,8 @@ const Faqs = () => {
             {faqs.map((question) => (
                 <article
                     key={question.id}
-                    className={`question hover:cursor-pointer ${
-                        activeId === question.id ? "show-text" : ""
-                    }`}
+                    className={`question hover:cursor-pointer ${activeId === question.id ? "show-text" : ""
+                        }`}
                     onClick={(e) => toggleQuestion(question.id, e)}
                 >
                     <div className="question-title capitalize py-6 flex justify-between items-center">
@@ -37,7 +36,7 @@ const Faqs = () => {
                             </span>
                         </button>
                     </div>
-                    <div className="question-text text-fc-3 text-lg font-fLato font-light leading-snug cursor-default pb-4">
+                    <div className="question-text text-fc-3 text-lg font-ff-2 font-[200] leading-snug cursor-default pb-4">
                         {question.a.map((answer, index) => (
                             <p key={index}>{answer}</p>
                         ))}

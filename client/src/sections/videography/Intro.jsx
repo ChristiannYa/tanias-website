@@ -3,7 +3,7 @@ import CtaButton from "../../components/CtaButton";
 
 const Intro = () => {
     return (
-        <section className="screen800 mx-auto">
+        <section className="screen800 mx-auto border">
             <div className="page-subheading">
                 <h1 className="gradient-text">meet vada!</h1>
             </div>

@@ -60,11 +60,9 @@
 
 .package-title {
   text-transform: uppercase;
-  font-family: var(--fAnton);
-  font-size: var(--fs-2);
-  font-weight: 400;
+  font-family: var(--fSyncopate);
 
-  @apply gradient-text;
+  @apply gradient-text !text-lg;
 }
 
 .package-desc {

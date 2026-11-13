@@ -1,4 +1,9 @@
 .conform {
+  font-family: var(--fSyncopate);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--fc-3);
+
   gap: 16px;
   padding: 16px;
 
@@ -10,6 +15,10 @@
     flex-direction: column;
     gap: 6px 0px;
     flex: 4;
+
+    #referral::placeholder {
+      white-space: pre-line;
+    }
   }
 
   &__area2 {
@@ -17,7 +26,6 @@
   }
 
   &__input {
-    color: var(--fc-3);
     height: 52px;
 
     background: transparent;
@@ -30,20 +38,16 @@
     padding: 0px 12px;
 
     &::placeholder {
-      font-family: var(--ff-3);
-      font-size: 1.2rem;
-
       @apply gradient-text;
     }
   }
 
   &__services {
-    padding: 6px 12px;
+    padding: 1.625rem 0.75rem 0.375rem 0.75rem; // top tight bottom left
     @apply flex flex-col gap-y-2;
-    
+
     &-title {
-      font-family: var(--ff-3);
-      font-size: 1.2rem;
+      // font-size: 1.2rem;
       @apply gradient-text;
     }
 
@@ -52,9 +56,7 @@
     }
 
     &-option {
-      font-family: var(--ff-3);
-      color: var(--fc-3);
-      @apply flex items-center gap-x-2;
+      @apply text-base flex items-center gap-x-2;
     }
   }
 

@@ -13,6 +13,7 @@ export default {
                 fCinzel: "var(--fCinzel)",
                 fLato: "var(--fLato)",
                 fAnton: "var(--fAnton)",
+                fSyncopate: "var(--fSyncopate)"
             },
             fontSize: {
                 "fs-0": "var(--fs-0)",
